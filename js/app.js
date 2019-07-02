@@ -5,9 +5,9 @@ window.onload = function(event) {
 
 	function convert(string) {
 		if (string === "") {
-			return "???";
+			display("???");
 		} else if (!string) {
-			return "Input must contain more than zero non white space characters";
+			display("Input must contain more than zero non white space characters");
 		} else {
 			let newString = "";
 
@@ -35,12 +35,12 @@ window.onload = function(event) {
 			// 				  .replace(/"/, "&quot;")
 			// 				  .replace(/'/, "&apos;");
 
-			return newString;
+			display(newString);
 		}
 	}
 
 	function display(result) {
-
+		document.getElementById("result-value").textContent = result;
 	}
 
 	function toggle(chevron) {
