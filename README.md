@@ -11,17 +11,17 @@
 > 2. Press the _Convert_ button
 > 3. The string will be displayed with certain characters replaced with the respective HTML entities
 
-## Requirements
+## Requirements
 > 1. This application requires a browser to run
 > 2. The browser must have JavaScript available and enabled
 
-## Errors
+## Errors
 > 1. N/A
 
-## Extra Information
+## Extra Information
 > 1. This was done for one of the activites in _freecodecamp_'s _Intermediate Algorithm Scripting_ section
 
-## Preview
+## Preview
 ![Screenshot 1](./img/screenshot1.png)
 ![Screenshot 2](./img/screenshot2.png)
 ![Screenshot 3](./img/screenshot3.png)
