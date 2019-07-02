@@ -4,7 +4,37 @@ window.onload = function(event) {
 	document.getElementById("copyright-year").textContent = (new Date()).getFullYear();
 
 	function convert(string) {
+		if (!string) {
+			return "Input must contain more than zero non white space characters";
+		} else {
+			let newString = "";
 
+			// Method I
+			for (let i = 0; i < string.length; i++) {
+				if (string[i] === "&") {
+					newString = newString + "&amp;";
+				} else if (string[i] === "<") {
+					newString = newString + "&lt;";
+				} else if (string[i] === ">") {
+					newString = newString + "&gt;";
+				} else if (string[i] === '"') {
+					newString = newString + "&quot;";
+				} else if (string[i] === "'") {
+					newString = newString + "&apos;"
+				} else {
+					newString = newString + string[i];
+				}
+			}
+
+			// Method II
+			// newString = string.replace(/&/, "&amp;")
+			// 				  .replace(/</, "&lt;")
+			// 				  .replace(/>/, "&gt;")
+			// 				  .replace(/"/, "&quot;")
+			// 				  .replace(/'/, "&apos;");
+
+			return newString;
+		}
 	}
 
 	function toggle(chevron) {
@@ -39,5 +69,7 @@ window.onload = function(event) {
 	let form = document.getElementById("form");
 	form.addEventListener("submit", function(event) {
 		event.preventDefault();
+
+		convert(this.children[0].value);
 	});
 };
