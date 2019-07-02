@@ -54,6 +54,46 @@ header {
 
 
 /* MAIN */
+input {
+	display: block;
+	margin: 0 auto 3vh;
+}
+
+main {
+	padding-top: 10vh;
+}
+
+#form-string {
+	border: none;
+	border-bottom: 1px black solid;
+	background-color: transparent;
+	text-align: center;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: 1em;
+}
+
+#form-string:focus::placeholder {
+	color: black;
+}
+
+#form-submit {
+	border: 2px #00A568 solid;
+	padding: 1vh 3vw;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: 1.3em;
+}
+
+#form-submit:active {
+	border-color: #FFA500;
+	background-color: aliceblue;
+}
+
+#result {
+	margin: 5vh 10vw;
+	border: 2px #0088FF solid;
+	border-radius: 10px;
+	padding: 3vh 0;
+}
 
 
 
