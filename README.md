@@ -10,3 +10,7 @@
 > 1. Enter a string into the input field
 > 2. Press the _Convert_ button
 > 3. The string will be displayed with certain characters replaced with the respective HTML entities
+
+## Requirements
+> 1. This application requires a browser to run
+> 2. The browser must have JavaScript available and enabled
