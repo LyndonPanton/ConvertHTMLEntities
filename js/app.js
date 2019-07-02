@@ -4,7 +4,9 @@ window.onload = function(event) {
 	document.getElementById("copyright-year").textContent = (new Date()).getFullYear();
 
 	function convert(string) {
-		if (!string) {
+		if (string === "") {
+			return "???";
+		} else if (!string) {
 			return "Input must contain more than zero non white space characters";
 		} else {
 			let newString = "";
@@ -35,6 +37,10 @@ window.onload = function(event) {
 
 			return newString;
 		}
+	}
+
+	function display(result) {
+
 	}
 
 	function toggle(chevron) {
