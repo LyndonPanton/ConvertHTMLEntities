@@ -1,2 +1,28 @@
 @charset "UTF-8";
 /* google spreadsheets ui */
+
+/* GENERAL */
+body, html {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	background-color: #F8F9FA;
+	text-align: center;
+	letter-spacing: 1px;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: 16px;
+	color: black;
+}
+
+
+
+/* HEADER */
+
+
+
+/* MAIN */
+
+
+
+/* FOOTER */
